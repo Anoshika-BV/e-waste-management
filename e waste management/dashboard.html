@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <img src="images/logo.png" class="logo">
+
+    <h2>E-Waste Categories</h2>
+
+    <label>Select Category</label>
+
+    <select id="category" onchange="showProducts()">
+
+        <option value="">Select Category</option>
+
+        <option>Electronics</option>
+
+        <option>Batteries</option>
+
+        <option>Lighting</option>
+
+        <option>Medical Equipment</option>
+
+        <option>Solar Equipment</option>
+
+        <option>Toys & Gadgets</option>
+
+    </select>
+
+    <br><br>
+
+    <label>Select Item</label>
+
+    <select id="product">
+
+        <option>Select Item</option>
+
+    </select>
+
+    <br><br>
+
+    <label>Quantity</label>
+
+    <input
+        type="number"
+        id="quantity"
+        min="1"
+        max="10"
+        placeholder="Maximum 10 Items"
+    >
+
+    <br><br>
+
+    <button onclick="nextPage()">
+
+        Proceed
+
+    </button>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

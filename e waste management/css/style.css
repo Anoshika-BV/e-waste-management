@@ -1,0 +1,277 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:url("../images/background.jpg") no-repeat center center/cover;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* Dark Overlay */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.35);
+    z-index:-1;
+}
+
+/* Main Box */
+.container{
+    width:430px;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(8px);
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* Logo */
+.logo{
+    width:90px;
+    display:block;
+    margin:0 auto 15px;
+}
+
+/* Heading */
+h1,h2{
+    text-align:center;
+    color:#1B5E20;
+    margin-bottom:20px;
+}
+
+/* Labels */
+label{
+    display:block;
+    margin-bottom:6px;
+    color:#333;
+    font-weight:600;
+}
+
+/* Inputs */
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:18px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    outline:none;
+    font-size:15px;
+    transition:0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:#2E7D32;
+    box-shadow:0 0 8px rgba(46,125,50,.3);
+}
+
+textarea{
+    resize:none;
+    height:90px;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:8px;
+    background:#2E7D32;
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#1B5E20;
+    transform:scale(1.02);
+}
+
+/* Links */
+p{
+    text-align:center;
+    margin-top:15px;
+}
+
+a{
+    color:#2E7D32;
+    text-decoration:none;
+    font-weight:600;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* Success Message */
+.success{
+    color:green;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+/* Status */
+.status{
+    color:#ff9800;
+    font-weight:bold;
+}
+
+/* Information Card */
+.card{
+    background:#f8fff8;
+    border-left:5px solid #2E7D32;
+    padding:18px;
+    border-radius:10px;
+    margin-top:20px;
+}
+
+.card p{
+    text-align:left;
+    margin:10px 0;
+    font-size:15px;
+}
+
+/* Dashboard Grid */
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.category{
+    background:#E8F5E9;
+    border-radius:10px;
+    padding:15px;
+    text-align:center;
+    cursor:pointer;
+    transition:0.3s;
+    border:2px solid transparent;
+}
+
+.category:hover{
+    background:#C8E6C9;
+    border-color:#2E7D32;
+    transform:translateY(-4px);
+}
+
+.category img{
+    width:55px;
+    margin-bottom:8px;
+}
+
+.category h4{
+    color:#1B5E20;
+    font-size:15px;
+}
+
+/* Table */
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#2E7D32;
+    color:white;
+    padding:10px;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+/* Responsive */
+@media(max-width:500px){
+
+.container{
+    width:100%;
+    padding:20px;
+}
+
+.category-grid{
+    grid-template-columns:1fr;
+}
+
+.logo{
+    width:70px;
+}
+
+h2{
+    font-size:22px;
+}
+
+button{
+    font-size:15px;
+}
+
+}
+.subtitle{
+    text-align:center;
+    color:#2E7D32;
+    margin-bottom:20px;
+    font-size:15px;
+    font-weight:500;
+}
+
+.forgot{
+    text-align:right;
+    margin-bottom:15px;
+}
+
+.forgot a{
+    color:#2E7D32;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.forgot a:hover{
+    text-decoration:underline;
+}
+
+hr{
+    margin:20px 0;
+    border:none;
+    border-top:1px solid #ddd;
+}
+
+.signup-text{
+    text-align:center;
+    font-size:15px;
+}
+
+.signup-text a{
+    color:#2E7D32;
+    font-weight:bold;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+    font-size:13px;
+    color:#555;
+}

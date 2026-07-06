@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pickup Confirmation</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <img src="images/logo.png" class="logo">
+
+    <h2>Pickup Request Submitted</h2>
+
+    <p class="success">✅ Your E-Waste Pickup has been Booked Successfully!</p>
+
+    <div class="card">
+
+        <p><b>Pickup ID :</b> <span id="pickupId"></span></p>
+
+        <p><b>Name :</b> <span id="name"></span></p>
+
+        <p><b>Phone :</b> <span id="phone"></span></p>
+
+        <p><b>Category :</b> <span id="category"></span></p>
+
+        <p><b>Product :</b> <span id="product"></span></p>
+
+        <p><b>Quantity :</b> <span id="quantity"></span></p>
+
+        <p><b>Address :</b> <span id="address"></span></p>
+
+        <p><b>Pickup Date :</b> <span id="date"></span></p>
+
+        <p><b>Pickup Time :</b> <span id="time"></span></p>
+
+        <p><b>Status :</b>
+            <span class="status" id="status"></span>
+        </p>
+
+        <br>
+
+        <p>
+            🚚 Our collection team will visit on your selected
+            date and time to collect your e-waste.
+        </p>
+
+    </div>
+
+    <br>
+
+    <button onclick="logout()">
+        Logout
+    </button>
+
+</div>
+
+<script src="js/success.js"></script>
+
+</body>
+</html>

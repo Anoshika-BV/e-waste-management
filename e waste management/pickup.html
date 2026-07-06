@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pickup Details</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+<img src="images/logo.png" class="logo">
+
+<h2>Pickup Details</h2>
+
+<form id="pickupForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+
+<input type="text" id="phone" placeholder="Phone Number" maxlength="10" required>
+
+<textarea id="address" placeholder="Enter Address" required></textarea>
+
+<label>Pickup Date</label>
+
+<input type="date" id="date" required>
+
+<label>Pickup Time</label>
+
+<select id="time">
+
+<option>9:00 AM - 11:00 AM</option>
+<option>11:00 AM - 1:00 PM</option>
+<option>2:00 PM - 4:00 PM</option>
+<option>4:00 PM - 6:00 PM</option>
+
+</select>
+
+<br><br>
+
+<button type="submit">
+
+Book Pickup
+
+</button>
+
+</form>
+
+</div>
+
+<script src="js/pickup.js"></script>
+
+</body>
+</html>
