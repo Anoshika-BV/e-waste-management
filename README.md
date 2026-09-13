@@ -59,6 +59,7 @@ The project contains multiple web pages including:
 
 ## 📂 Project Structure
 
+```text
 e-waste-management/
 │
 ├── css/
